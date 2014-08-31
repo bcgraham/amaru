@@ -16,7 +16,7 @@ const EXT = ".amaru"
 const BACKUP_DIR = "storage"
 
 func init() {
-	err := os.MkdirAll(BACKUP_DIR, os.ModeDir|os.ModeDir)
+	err := os.MkdirAll(BACKUP_DIR, os.ModeDir|os.ModePerm)
 	if err != nil {
 		log.Fatal(err)
 	}
